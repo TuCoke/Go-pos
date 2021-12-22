@@ -1,0 +1,23 @@
+# 全局日志配置
+[logger]
+    Path   = "log"
+    Level  = "all"
+    Stdout = true
+# 数据库连接
+[database]
+   [database.default]
+        link  = "mysql:dinfo:zswznKjN5csbKiCe@tcp(81.69.255.66:3306)/dinfo?multiStatements=true"
+        debug = true
+    # 数据库日志对象配置
+    [database.logger]
+        Path   = "log/sql"
+        Level  = "all"
+        Stdout = true
+[redis]
+    default = "192.168.8.185:6379,3,optz!@#$5678?idleTimeout=600"
+
+
+
+
+
+
